@@ -1,0 +1,52 @@
+.profile-stats-section {
+  text-align: center;
+  margin-bottom: 24px;
+
+  &__name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+
+    span:first-child {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: $font-color-profile;
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid transparent;
+
+    .stat {
+      text-align: center;
+      @include flex-center;
+      flex-direction: column;
+      color: $font-color-profile;
+      width: 100%;
+
+      &:nth-child(2) {
+        border-left: 1px solid $font-color-header;
+        border-right: 1px solid $font-color-header;
+      }
+
+      &__value {
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      &__label {
+        font-size: 17px;
+      }
+    }
+  }
+}
