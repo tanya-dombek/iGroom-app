@@ -20,6 +20,7 @@
 ```bash
 # Сборка для production
 npm run build
+```
 
 ```bash
 docker-compose up --build
